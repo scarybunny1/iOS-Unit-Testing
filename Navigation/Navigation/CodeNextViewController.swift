@@ -27,6 +27,10 @@ class CodeNextViewController: UIViewController {
         view.addSubview(label)
     }
     
+    deinit{
+        print(">> CodeNextViewController deinit called")
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         label.translatesAutoresizingMaskIntoConstraints = false

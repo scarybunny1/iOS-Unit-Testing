@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    deinit{
+        print(">> ViewController deinit called")
+    }
+    
     @IBAction private func didTapCodePushButton(){
         let nextVC = CodeNextViewController(labelText: "Pushed using code push button")
         navigationController?.pushViewController(nextVC, animated: true)
